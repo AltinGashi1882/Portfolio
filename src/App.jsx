@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './index.css'
 import AboutMe from './Pages/AboutMe'
 import Skills from './Pages/Skills'
+import Projects from './Pages/Projects'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,6 +16,7 @@ function App() {
 >
   <AboutMe/>
   <Skills/>
+  <Projects/>
 </div>
 
     
