@@ -3,7 +3,7 @@ import FadeInUp from '../Animations/FadeInUp';
 import Particles from '../Animations/Particles';
 import SplitText from '../Animations/SplitText';
 
-export default function Home() {
+export default function AboutMe() {
   return (
     <div 
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden"
