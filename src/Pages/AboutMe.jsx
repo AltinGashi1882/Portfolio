@@ -52,7 +52,7 @@ export default function AboutMe() {
             {/* Description */}
             <div className="block w-full max-w-lg">
               <SplitText
-                text="Born August 18, 2002, studies Computer Science at the University of Prizren. Passionate developer pursuing tech career with bachelor's degree."
+                text="Born August 18, 2002, completed a Bachelor's degree in Computer Science at the University of Prizren. Currently pursuing Master's studies while building a career in technology."
                 className="text-gray-300 text-lg sm:text-xl leading-relaxed"
                 delay={60}
                 duration={0.6}
