@@ -16,7 +16,7 @@ export default function Certificates() {
     const certificates = [{
         degree: "Frontend Development",
         school: "Shkolla Digjitale Prizren",
-        timeline: "2025"
+        timeline: "2025 - Present"
     }];
 
     return (
