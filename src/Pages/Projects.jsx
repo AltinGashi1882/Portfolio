@@ -16,7 +16,7 @@ export default function Projects() {
       {/* Project Card 1 */}
       <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img 
-          src="../../public/images/simple_business_project.png" 
+          src="./images/simple_business_project.png" 
           alt="Project 1" 
           className="w-full h-48 object-cover"
         />
