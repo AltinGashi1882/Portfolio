@@ -26,13 +26,13 @@ export default function Skills() {
                 <h3 className="text-gray-300 font-semibold text-lg">
                   Frontend
                 </h3>
-                <p className="text-sm text-gray-200">React, Tailwind, GSAP</p>
+                <p className="text-sm text-gray-200">React, Tailwind, Bootstrap</p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl flex flex-col text-center items-center hover:scale-105 transition-transform">
                 <Database className='w-10 h-10 text-gray-300 mb-3'/>
                 <h3 className='font-semibold text-lg text-gray-300'>Backend</h3>
-                <p className='text-sm text-gray-200'>PHP, MySQL, Node.js</p>
+                <p className='text-sm text-gray-200'>PHP, MySQL</p>
               </div>
             <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl flex flex-col text-center items-center hover:scale-105 transition-transform">
                 <Cpu className="w-10 h-10 text-gray-300 mb-3"/>
