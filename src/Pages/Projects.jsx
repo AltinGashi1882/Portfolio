@@ -1,6 +1,6 @@
 
 import AnimatedContent from '../Animations/AnimtedContent';
-import SBP from '../assets/img/simple_business_project.png';
+import SBP from '../../public/simple_business_project.png';
 
 export default function Projects() {
     return (
