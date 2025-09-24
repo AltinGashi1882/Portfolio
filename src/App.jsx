@@ -3,6 +3,7 @@ import './index.css'
 import AboutMe from './Pages/AboutMe'
 import Skills from './Pages/Skills'
 import Projects from './Pages/Projects'
+import Certificates from './Pages/Certificates'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,7 @@ function App() {
   <AboutMe/>
   <Skills/>
   <Projects/>
+  <Certificates/>
 </div>
 
     
