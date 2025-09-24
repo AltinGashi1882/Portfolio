@@ -54,7 +54,7 @@ export default function AboutMe() {
               <SplitText
                 text="Born August 18, 2002, completed a Bachelor's degree in Computer Science at the University of Prizren. Currently pursuing Master's studies while building a career in technology."
                 className="text-gray-300 text-lg sm:text-xl leading-relaxed"
-                delay={60}
+                delay={45}
                 duration={0.6}
               />
             </div>
