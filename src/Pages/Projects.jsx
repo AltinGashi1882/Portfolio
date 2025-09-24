@@ -1,5 +1,6 @@
 
 import AnimatedContent from '../Animations/AnimtedContent';
+import SimpleBusinnesProject from '../assets/img/simple_business_project.png'
 
 export default function Projects() {
     return (
@@ -16,7 +17,7 @@ export default function Projects() {
       {/* Project Card 1 */}
       <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img 
-          src="./images/simple_business_project.png" 
+          src={SimpleBusinnesProject}
           alt="Project 1" 
           className="w-full h-48 object-cover"
         />
