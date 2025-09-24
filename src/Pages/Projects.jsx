@@ -1,6 +1,6 @@
 
 import AnimatedContent from '../Animations/AnimtedContent';
-import SimpleBusinnesProject from '../assets/img/simple_business_project.png'
+import SimpleBusinnesProject from '../../public/images/simple_business_project.png';
 
 export default function Projects() {
     return (
