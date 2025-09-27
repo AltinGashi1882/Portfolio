@@ -1,6 +1,7 @@
 
 import AnimatedContent from '../Animations/AnimtedContent';
 import SimpleBusinnesProject from '../assets/img/simple_business_project.png'
+import ToDoApp from '../assets/img/ToDoApp.png'
 
 export default function Projects() {
     return (
@@ -35,7 +36,27 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      
+
+      {/* Project Card 2 */}
+      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src={ToDoApp}
+          alt="Project 1" 
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-white mb-2">ToDoList App</h3>
+          <p className="text-gray-400 mb-4">A simple App for To Do Tasks with a specific date you put</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-orange-700 text-white px-3 py-1 rounded-full text-sm">HTML</span>
+            <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">JavaScript</span>
+            <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Tailwind</span>
+          </div>
+          <div className="flex gap-4">
+            <a href="https://github.com/AltinGashi1882/ToDoApp" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
+          </div>
+        </div>
+      </div>
       
     </div>
   </div>
