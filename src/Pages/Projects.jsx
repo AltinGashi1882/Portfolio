@@ -17,7 +17,7 @@ export default function Projects() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Project Card 1 */}
-      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-white/3 backdrop-blur-lg rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img 
           src={ChatApp}
           alt="Project 1" 
@@ -41,7 +41,7 @@ export default function Projects() {
         </div>
       </div>
       {/* Project Card 2 */}
-      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-white/3 backdrop-blur-lg rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img 
           src={SimpleBusinnesProject}
           alt="Project 1" 
@@ -63,7 +63,7 @@ export default function Projects() {
       </div>
 
       {/* Project Card 3 */}
-      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-white/3 backdrop-blur-lg rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img 
           src={ToDoApp}
           alt="Project 1" 
