@@ -2,7 +2,7 @@
 import AnimatedContent from '../Animations/AnimatedContent';
 import SimpleBusinnesProject from '../assets/img/simple_business_project.png'
 import ToDoApp from '../assets/img/ToDoApp.png'
-import ChatApp from '../assets/img/ChatApp.png'
+import ChatApp from '../assets/img/ChatApp.PNG';
 
 export default function Projects() {
     return (
