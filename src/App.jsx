@@ -48,7 +48,7 @@ function App() {
     
     <div className='relative'>
       <SVGBackground></SVGBackground>
-      <h2 className="text-center  p-15 text-white text-6xl font-extrabold">Projects</h2>
+      <h2 className="text-center text-4xl lg:p-15 p-5 text-white lg:text-6xl font-extrabold">Projects</h2>
           <div className='flex flex-col justify-center items-center gap-10 lg:flex-row lg:pb-10'>
             {projectData.map((data) => (
               <ProjectCard 
