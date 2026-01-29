@@ -9,7 +9,7 @@ export default function Heading() {
           Developer
         </mark>
       </h1>
-      <p className="text-lg font-medium text-white lg:text-xl max-w-2xl">
+      <p className="pb-5 text-lg font-medium text-white lg:text-xl max-w-2xl">
         Passionate web developer crafting scalable, responsive web applications
         with clean, efficient, and user-centric code.
       </p>

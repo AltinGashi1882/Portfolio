@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-    <div className='relative overflow-hidden h-screen w-screen'>
+    <div className='relative overflow-hidden h-auto w-auto lg:h-screen lg:w-screen'>
       <Waves />
       
         <div className='relative flex flex-col items-center text-center gap-20 mt-10 lg:flex-row lg:text-left lg:gap-10 lg:justify-around'>
