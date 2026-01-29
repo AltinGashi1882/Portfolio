@@ -4,7 +4,7 @@ export default function Card(props) {
     return (
         <>
         
-        <div className="flex flex-col w-100 h-170 bg-[#222536] rounded-2xl shadow-2xl">
+        <div className="lg:w-100 flex flex-col w-87 h-163 lg:h-170 bg-[#222536] rounded-2xl shadow-2xl">
             <img src={props.img} className='h-90 object-cover rounded-t-2xl' alt="" />
             <div className='flex flex-row justify-between m-7 mt-10 text-center'>
                 <a href={props.email}><button className='bg-[#C2CBD3] p-2 rounded-sm font-bold cursor-pointer hover:bg-gray-300 transition flex'><Mail/>Email</button></a>
