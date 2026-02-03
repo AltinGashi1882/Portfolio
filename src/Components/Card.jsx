@@ -12,7 +12,7 @@ export default function Card(props) {
                 <a target="_blank"href={props.github}><button className='bg-white p-2 rounded-sm font-bold cursor-pointer hover:bg-gray-300 transition flex'><Github/>GitHub</button></a>
             </div>
             <h1 className='text-white font-bold lg:ml-5 mt-3 text-xl'>About Me</h1>
-            <p className='text-white lg:ml-5 mt-2'>
+            <p className='text-white m-4 lg:ml-5 mt-2'>
                 {props.about}
             </p>
         </div>
