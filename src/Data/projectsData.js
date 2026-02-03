@@ -24,5 +24,4 @@ const projectData = [{
         liveUrl: "https://ephemeral-bubblegum-968f0f.netlify.app/",
     }
 ]
-
 export default projectData;

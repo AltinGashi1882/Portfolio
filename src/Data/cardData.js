@@ -2,6 +2,7 @@ import altinImg from "../assets/img/Altin_2.jpeg";
 
 const cardData = [{
     id: 1,
+    name: "Altin Gashi",
     img: altinImg,
     email: "mailto:altingashi18@gmail.com",
     github: "https://github.com/AltinGashi1882",
