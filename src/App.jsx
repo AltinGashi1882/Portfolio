@@ -1,15 +1,16 @@
 // App.tsx
 import { useEffect, useState } from "react";
 import "./index.css";
-import cardData from "./Data/cardData";       // assuming still one item
+import cardData from "./Data/cardData";       
 import projectsData from "./Data/projectsData";
+import CV from "../src/assets/docs/CV-Altin-Gashi.pdf";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [theme, setTheme] = useState("dark"); // or read from localStorage
 
   useEffect(() => {
-    // Fake loading (you can remove or use real data fetching)
+    
     const timer = setTimeout(() => setLoading(false), 1200);
     document.documentElement.setAttribute("data-theme", theme);
     return () => clearTimeout(timer);
@@ -91,7 +92,7 @@ function App() {
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <button className="btn btn-primary btn-lg">More about me</button>
-                <button className="btn btn-outline btn-lg">Download CV</button>
+                <a href={CV} download="CV-Altin-Gashi.pdf"><button className="btn btn-outline btn-lg">Download CV</button></a>
               </div>
             </div>
           </div>
@@ -106,9 +107,9 @@ function App() {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
-            { title: "Frontend", value: 85, color: "primary", stack: "React, Tailwind, DaisyUI, TS" },
-            { title: "Backend",   value: 70, color: "secondary", stack: "Node.js, Express, Sequelize, PostgreSQL" },
-            { title: "Tools & DevOps", value: 80, color: "accent", stack: "Git, Linux, Docker, Postman, Vercel" },
+            { title: "Frontend", value: 85, color: "primary", stack: "React, Tailwind, DaisyUI" },
+            { title: "Backend",   value: 70, color: "secondary", stack: "Node.js, Express, Sequelize, SQL, MongoDB, PHP, Java" },
+            { title: "Tools & DevOps", value: 80, color: "accent", stack: "Git, Github, Linux, Servers" },
           ].map((item, i) => (
             <div
               key={i}
@@ -276,7 +277,7 @@ function App() {
               key={proj.id}
               className="card bg-base-200/70 backdrop-blur-sm border border-base-content/5 shadow-xl group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
-              {/* If you have project images later → add here */}
+              
               <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-6xl opacity-30 group-hover:opacity-50 transition-opacity">
                 {proj.title.charAt(0)}
               </div>
