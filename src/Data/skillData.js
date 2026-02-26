@@ -1,25 +1,22 @@
-import ReactLogo from "../assets/img/React-Logo.png";
-import NodejsLogo from "../assets/img/nodejs.png"
-import MongodbLogo from "../assets/img/mongodb.png"
 
 const skillData = [{
     id: 1,
-    heading: "Frontend",
-    skills: ["JavaScript", "React", "Tailwind", "Bootstrap", "Canva"],
-    logo: ReactLogo,
-    animation: "animate-spin"
+    title: "Frontend",
+    color: "primary",
+    value: 85,
+    stack: ["JavaScript, ", "React, ", "Tailwind, ", "Bootstrap, ", "Canva"],
 }, {
     id: 2,
-    heading: "Backend",
-    skills: ["Java", "pHp", "Express", "Python"],
-    logo: NodejsLogo,
-    animation: "animate-bounce",
+    title: "Backend",
+    color: "secondary",
+    value: 70,
+    stack: ["Java, ", "PHP, ", "Express, ", "Python"],
 }, {
     id: 3,
-    heading: "Database",
-    skills: ["MySQL", "PostgreSQL", "MongoDB"],
-    logo: MongodbLogo,
-    animation: "animate-pulse",
+    title: "Database",
+    color: "accent",
+    value: 75,
+    stack: ["MySQL, ", "PostgreSQL, ", "MongoDB"],
 }]
 
 export default skillData;

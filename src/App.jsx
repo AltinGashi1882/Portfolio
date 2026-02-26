@@ -4,6 +4,10 @@ import "./index.css";
 import cardData from "./Data/cardData";       
 import projectsData from "./Data/projectsData";
 import CV from "../src/assets/docs/CV-Altin-Gashi.pdf";
+import skillData from "./Data/skillData";
+import SkillCard from "./Components/SkillCard";
+import ProjectCard from "./Components/Project";
+import FadeInUp from "./Animations/FadeInUp";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -100,41 +104,32 @@ function App() {
       ))}
 
       {/* ====================== SKILLS ====================== */}
+      <FadeInUp>
       <section id="skills" className="py-20 px-6 max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
           Skills
         </h2>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            { title: "Frontend", value: 85, color: "primary", stack: "React, Tailwind, DaisyUI" },
-            { title: "Backend",   value: 70, color: "secondary", stack: "Node.js, Express, Sequelize, SQL, MongoDB, PHP, Java" },
-            { title: "Tools & DevOps", value: 80, color: "accent", stack: "Git, Github, Linux, Servers" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="card bg-base-200/60 backdrop-blur-md border border-base-content/10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="card-body">
-                <h3 className="card-title text-2xl">{item.title}</h3>
-                <progress
-                  className={`progress progress-${item.color} w-full mt-2`}
-                  value={item.value}
-                  max="100"
-                ></progress>
-                <p className="mt-4 text-base-content/70">{item.stack}</p>
-              </div>
-            </div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {skillData.map((data) => (
+            <SkillCard 
+              key={data.id}
+              title={data.title}
+              stack={data.stack}
+              color={data.color}
+              value={data.value}
+            />
           ))}
-        </div>
+      </div>
       </section>
+      </FadeInUp>
 
       {/* ====================== JOURNEY ====================== */}
+      <FadeInUp>
 <section className="py-20 px-6 max-w-5xl mx-auto">
   <h2 className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
     My Journey
   </h2>
-
+  
   <ul className="timeline timeline-snap-icon timeline-vertical">
     {/* 2023 – Left side */}
     <li>
@@ -263,9 +258,11 @@ function App() {
     </li>
   </ul>
 </section>
+</FadeInUp>
 
 
       {/* ====================== PROJECTS ====================== */}
+      <FadeInUp>
       <section id="projects" className="py-20 px-6 max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
           Projects
@@ -273,37 +270,18 @@ function App() {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((proj) => (
-            <div
-              key={proj.id}
-              className="card bg-base-200/70 backdrop-blur-sm border border-base-content/5 shadow-xl group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
-            >
-              
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-6xl opacity-30 group-hover:opacity-50 transition-opacity">
-                {proj.title.charAt(0)}
-              </div>
-
-              <div className="card-body">
-                <h3 className="card-title text-xl">{proj.title}</h3>
-                <p className="text-base-content/70 line-clamp-3">{proj.description}</p>
-
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {proj.techStack.map((t, i) => (
-                    <div key={i} className="badge badge-outline badge-sm">{t}</div>
-                  ))}
-                </div>
-
-                <div className="card-actions justify-between mt-6">
-                  <div className="badge badge-outline">{proj.status}</div>
-                  <div className="flex gap-3">
-                    <a href={proj.repoUrl} target="_blank" className="btn btn-sm btn-outline">Repo</a>
-                    <a href={proj.liveUrl}  target="_blank" className="btn btn-sm btn-primary">Live Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectCard 
+            title={proj.title}
+            description={proj.description}
+            techStack={proj.techStack}
+            repoUrl={proj.repoUrl}
+            liveUrl={proj.liveUrl}
+            status={proj.status}
+            />
           ))}
         </div>
       </section>
+      </FadeInUp>
 
       {/* ====================== FOOTER ====================== */}
       <footer className="footer footer-center p-10 bg-base-300 text-base-content border-t border-base-content/10">
