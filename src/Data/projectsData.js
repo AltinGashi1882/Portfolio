@@ -10,7 +10,7 @@ const projectData = [{
         id: 2,
         title: "Points of Sale",
         techStack: ["Express", "Tailwind", "React", "MySQL", "JWT"],
-        status: "In Progress",
+        status: "Completed",
         description: "Points of Sale used for Restaurant, Serving, taking orders and managing tables",
         repoUrl: "https://github.com/AltinGashi1882/PointsOfSale",
     },
