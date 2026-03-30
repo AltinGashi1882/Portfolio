@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
 function ProjectCard({
+  id,
   title,
   description,
   techStack = [],
@@ -37,7 +40,9 @@ function ProjectCard({
                   <div className={`"badge badge-outline w-22 font-bold text-center rounded ${statusBg[status]}"`}>{status}</div>
                   <div className="flex gap-3">
                     <a href={repoUrl} target="_blank" className="btn btn-sm btn-outline">Repo</a>
-                    <a href={liveUrl}  target="_blank" className="btn btn-sm btn-primary">Live Demo</a>
+                    <Link className="btn btn-sm btn-primary" to={`/project/${id}`}>
+                      View Project
+                    </Link>
                   </div>
                 </div>
               </div>
