@@ -1,5 +1,14 @@
 import posimg1 from "../assets/img/pos/pinpage.png"
 import posimg2 from "../assets/img/pos/adminpage.png"
+import posimg3 from "../assets/img/pos/pos3.png"
+import posimg4 from "../assets/img/pos/pos4.png"
+import posimg5 from "../assets/img/pos/pos5.png"
+import posimg6 from "../assets/img/pos/pos6.png"
+import posimg7 from "../assets/img/pos/pos7.png"
+import posimg8 from "../assets/img/pos/pos8.png"
+import posimg9 from "../assets/img/pos/pos9.png"
+import posimg10 from "../assets/img/pos/pos10.png"
+
 
 import gspimg1 from "../assets/img/gsp/secure_password.png"
 
@@ -22,7 +31,8 @@ const projectData = [{
         repoUrl: "https://github.com/AltinGashi1882/PointsOfSale",
         showcaseImg: [
             posimg1,
-            posimg2,
+            posimg2, posimg3, posimg4,posimg5,
+            posimg6, posimg7, posimg8, posimg9,posimg10
         ]
     },
     {
